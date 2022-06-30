@@ -74,15 +74,15 @@ li {
   transform: translateX(-50%);
   border-radius: 50%;
   opacity: 1;
-  animation: mouse 3s infinite;
+  animation: mouse 4s infinite;
 }
 
 @keyframes mouse {
-  from {
+  0% {
     opacity: 1;
     top: 10px;
   }
-  to {
+  50% {
     opacity: 0;
     top: 55px;
   }
