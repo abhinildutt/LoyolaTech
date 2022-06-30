@@ -46,9 +46,44 @@ li {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.5);
   background: lightgray;
-  text-align: center;
   scroll-snap-align: start;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  flex-flow: row;
+  /* justify-content: center; */
 }/*# sourceMappingURL=index.css.map */
+
+.mouse {
+  flex-basis: 100%;
+  width: 30px;
+  height: 60px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 60px;
+  position: fixed;
+  top: 85vh;
+  left: 50vw;
+}
+
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  background: rgb(238, 236, 236);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 3s infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 55px;
+  }
+}
