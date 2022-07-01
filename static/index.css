@@ -48,7 +48,7 @@ li {
   background: lightgray;
   scroll-snap-align: start;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   /* justify-content: center; */
 }/*# sourceMappingURL=index.css.map */
 
@@ -61,6 +61,7 @@ li {
   position: fixed;
   top: 85vh;
   left: 50vw;
+  z-index: 100;
 }
 
 .mouse::before {
@@ -86,4 +87,82 @@ li {
     opacity: 0;
     top: 55px;
   }
+}
+
+.nodeCont {
+  position: fixed;
+  top: 40vh;
+  left: 95vw; 
+  z-index: 3;
+}
+
+.node {
+  transform: translateX(80%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: rgb(238, 236, 236);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -24vh;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  border: 2px solid white;
+  max-height: 0px;
+  color: white;
+  text-align: center;
+  width: 70vw;
+  z-index: 3;
+}
+
+.logo {
+  width: 8.6vw;
+  height: 10vh;
+  margin-top: 3vh;
+}
+
+.logo2 {
+  margin-left: 65vw;
+  height: 60vh;
+  margin-top: -30vh;
+  z-index: 0;
+  animation: move 4s infinite;
+}
+
+.eth {
+  height: 60vh;
+  width: 30vw;
+  opacity: 100%;
+}
+
+@keyframes move {
+   from {
+    margin-top: -60vh;
+   }
+   to {
+    margin-top: -30vh;
+   }
+}
+
+.welcome {
+  display: flex;
+  z-index: 1;
+  border-left: 4px solid white;
+  height: 50vh;
+  width: 2vw;
+  margin-top: -13vh;
+  margin-left: 70vw;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
 }

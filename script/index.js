@@ -1,3 +1,9 @@
+var n = document.getElementById("n");
+    n.onmouseover = function() {
+      var node = document.getElementById("node");
+      node.style.opacity = "0.5";
+  }
+
 const init = function() {
   let items = document.querySelectorAll("li");
   for (let i = 0; i < items.length; i++) {
@@ -9,3 +15,6 @@ const init = function() {
 };
 
 init();
+scrollbar();
+
+

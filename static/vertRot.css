@@ -1,8 +1,12 @@
   .Iam {
     /* padding: 2em 5em; */
+    /* border: 2px solid white; */
     margin-top: 40vh;
     font: normal 40px/50px Montserrat, sans-serif;
     color: #999;
+    width: 50vw;
+    margin-left: 15vw;
+    z-index: 3;
   }
   .Iam p {
     height: 50px;
