@@ -6,10 +6,11 @@
         <link href = "../static/index.css" rel="stylesheet"/>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href = "../static/vertRot.css" rel="stylesheet"/>
+        <link href = "../static/page2.css" rel="stylesheet"/>
     </head>
         <div class="wrapper">
-            <div class="container">
-                    <li id = "title_page">
+            <div class="container" id = "cont">
+                    <li id = "1page">
                         <img class = "logo" src="../assets/logo.png">
                         <div class = "welcome">
                             Welcome to Loyola Tech
@@ -31,11 +32,11 @@
                         </div>
                         <div class="mouse"></div>
                         <div class="nodeCont" id = "n">
-                            <div class="node" id = "node_here"></div>
+                            <div class="node" id = "1node"></div>
                             <br/>
-                            <div class="node" id = "node2"></div>
+                            <div class="node" id = "2node"></div>
                             <br/>
-                            <div class="node" id = "node3"></div>
+                            <div class="node" id = "3node"></div>
                         </div>
 
                         <div class = "logo2">
@@ -43,9 +44,14 @@
                         </div>
                     </li>
 
-                    <li>Loyola Tech.</li>
-                    <li>Loyola Tech.</li>
+                    <li id = "2page"> 
+                        <div class = "about">
+                            Who are we
+                        </div>
+                    </li>
+                    <li id = "3page">Loyola Tech.</li>
             </div>
         </div>
-    <script src = "../script/index.js"> </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+        <script src = "../script/index.js"> </script>
 </html>
