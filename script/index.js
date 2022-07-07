@@ -9,19 +9,20 @@ const init = function() {
     items[i].style.background = "black";
   }  
 };
-console.log(document.getElementById("2page").offsetTop);
 var scrollbar = () => {
 
   for(let i = 1; i <= 3; i++) {
     $("#" + i + "node").click(function() {
-      $("#cont").css("scroll-snap-type", "none");
+      $(".container").css("scroll-snap-type", "none");
       $(".container").animate({
-          scrollTop: document.getElementById(i + "page").offsetTop}, 'slow');
-    });
-      $("#cont").css("scroll-snap-type", "y mandatory");
-
+          scrollTop: document.getElementById(i + "page").offsetTop}, 'slow', function() {
+            // $(".about").css("animation", "fade 2s linear");
+            // $(".container").css("scroll-snap-type", " y mandatory");
+          });
+      });
   }
 };
+
 
 
 

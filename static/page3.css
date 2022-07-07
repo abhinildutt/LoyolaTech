@@ -1,0 +1,15 @@
+.box {
+    background: rgb(89, 86, 86);
+    /* border: 2px solid white; */
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box::before {
+    background: rgb(89, 86, 86);
+    box-shadow: inset 0 0 2000px rgba(253, 3, 3, 0.5);
+    filter: blur(10px);
+}
+

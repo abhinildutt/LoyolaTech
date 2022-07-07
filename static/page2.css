@@ -6,9 +6,58 @@
     color: white;
     text-align: center;
     width: 70vw;
-    animation: fade 2s linear;
+    /* animation: fade 2s linear; */
 }
 @keyframes fade {
     0% { opacity: 0 }
     100% { opacity: 1 }
   }
+
+
+.welcome2 {
+    display: flex;
+    z-index: 1;
+    border-left: 4px solid white;
+    height: 50vh;
+    width: 2vw;
+    margin-top: 0vh;
+    margin-left: 10vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Montserrat, sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  
+}
+.mission {
+    color: rgb(202, 200, 200);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    width: 70vw;
+    margin-top: -30vh;
+    margin-left: 21vw;
+}
+
+.mission .hh {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(243, 118, 118);
+}
+
+.cornerboxleft {
+    width: 1.5vw;
+    height: 3vh;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    z-index: 0;
+}
+
+.cornerboxright {
+    width: 1.5vw;
+    height: 3vh;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    z-index: 0;
+}
