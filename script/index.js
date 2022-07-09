@@ -11,7 +11,7 @@ const init = function() {
 };
 var scrollbar = () => {
 
-  for(let i = 1; i <= 3; i++) {
+  for(let i = 1; i <= 4; i++) {
     $("#" + i + "node").click(function() {
       $(".container").css("scroll-snap-type", "none");
       $(".container").animate({

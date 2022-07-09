@@ -6,6 +6,7 @@
     color: white;
     text-align: center;
     width: 70vw;
+
     /* animation: fade 2s linear; */
 }
 @keyframes fade {
@@ -38,12 +39,14 @@
     width: 70vw;
     margin-top: -30vh;
     margin-left: 21vw;
+    z-index: 2;
 }
 
 .mission .hh {
     font-size: 20px;
     font-weight: 800;
     color: rgb(243, 118, 118);
+    z-index: 1;
 }
 
 .cornerboxleft {
@@ -51,7 +54,7 @@
     height: 3vh;
     border-left: 1px solid white;
     border-top: 1px solid white;
-    z-index: 0;
+    z-index: 1;
 }
 
 .cornerboxright {
@@ -59,5 +62,13 @@
     height: 3vh;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
+    z-index: 1;
+}
+
+.bg {
     z-index: 0;
+    width : 160vw;
+    height: 200vh;
+    margin-top: -70vh;
+    margin-left: -70vw;
 }

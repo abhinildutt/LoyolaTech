@@ -1,0 +1,28 @@
+.box4 {
+    height: 90vh;
+    width: 25vw;
+    border-radius: 10px;
+    box-shadow: 3px white;
+    /* background-color: rgb(32, 32, 32); */
+    background: linear-gradient(180deg,rgb(0, 0, 0),#131d2b);
+    margin-top: 10vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
+
+
+.title4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 40vw;
+    z-index: 1;
+}

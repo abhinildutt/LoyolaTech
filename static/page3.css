@@ -1,10 +1,10 @@
 .box {
-    background: rgb(89, 86, 86);
+    background: rgb(0, 0, 0);
     /* border: 2px solid white; */
     width: 20vw;
     height: 20vh;
     border-radius: 10px;
-    text-align: center;
+    padding-left: 10px;
 }
 
 .box::before {
@@ -13,3 +13,28 @@
     filter: blur(10px);
 }
 
+.title3 {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 40vw;
+    z-index: 1;
+}
+
+.normal3 {
+    letter-spacing: 0px;
+    /* font-family: 'Inter', sans-serif; */
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(161, 155, 155);
+    text-align: center;
+    width: 40vw;
+    z-index: 1;
+}
